@@ -1,0 +1,19 @@
+{
+  "timeStamp": "2023-07-26 05.42",
+  "timeZone": "+8",
+  "event": "Test Event 2",
+  "subevents": [
+    {
+      "description": "Ain't this just neat!",
+      "links": [],
+      "media": [],
+      "comment": "commentation"
+    }
+  ],
+  "chapters": [
+    "Test Chapter"
+  ],
+  "factions": [
+    "r/kessokuband"
+  ]
+}

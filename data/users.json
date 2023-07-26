@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Starman_x64",
+    "accounts": [
+      {
+        "service": "Discord",
+        "displayName": "Starman_x64",
+        "username": "@starman_x64",
+        "link": "discord.com",
+        "brokenLink": false,
+        "mediaSrc": ""
+      },
+      {
+        "service": "Reddit",
+        "displayName": "Starman_x64",
+        "username": "u/starman_x64",
+        "link": "reddit.com/u/starman_x64",
+        "brokenLink": false,
+        "mediaSrc": ""
+      }
+    ],
+    "factionHistory": [
+      {
+        "timeStamp": "13:39 26-07-2023",
+        "timeZone": "+8",
+        "status": "member",
+        "event": "Test Event",
+        "name": "r/kessokuband",
+        "roles": [
+          {
+            "name": "diplomat",
+            "info": {
+              "faction": "r/touhou"
+            }
+          }
+        ]
+      },
+      {
+        "name": "r/touhou",
+        "roles": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "name": "r/kessokuband",
+    "contact": [
+      {
+        "service": "Discord",
+        "link": "discord.gg/kessokuband",
+        "brokenLink": false
+      },
+      {
+        "service": "Reddit",
+        "link": "reddit.com/r/kessokuband",
+        "brokenLink": false
+      }
+    ],
+    "alignmentHistory": [
+      {
+        "timeStamp": "13:39 26-07-2023",
+        "timeZone": "+8",
+        "status": "self",
+        "event": "Test Event"
+      }
+    ]
+  }
+]

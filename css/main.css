@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+div { border: 1px solid red; }
+
+#page-banner {
+  width: 100%;
+  height: fit-content;
+}
+
+#page-banner img {
+  content: url("../img/banner.png");
+  image-rendering: pixelated; 
+  width: 100%;
+}
+
+#prologue {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+footer {
+  text-align: center;
+}
