@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Test Chapter",
+    "events": [
+      {
+        "timeStamp": "2023-07-26 05.39",
+        "name": "Test Event 1",
+        "description": "@starman_x64's reddit account is u/Starman_x64.",
+        "links": [
+          {
+            "src": "https://discord.com/users/567241516439830529",
+            "media": "",
+            "brokenLink": false
+          }
+        ],
+        "media": [
+          {
+            "name": "",
+            "src": ""
+          }
+        ],
+        "factions": [
+          "r/kessokuband"
+        ],
+        "comment": "Author's Comment"
+      },
+      {
+        "timeStamp": "2023-07-26 05.42",
+        "name": "Test Event 2",
+        "description": "Ain't this just neat!",
+        "links": [],
+        "media": [],
+        "factions": [
+          "r/kessokuband"
+        ],
+        "comment": "commentation"
+      }
+    ]
+  }
+
+]

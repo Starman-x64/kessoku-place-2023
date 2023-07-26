@@ -10,8 +10,8 @@ Detailing the events of the Kessoku Band faction in r/place 2023.
 
 ## Naming Conventions
 Event and chapter files are named by the following convention:
-`yyyy-mm-dd_hh-mm_name-of-event-or-chapter.json`
+```yyyy-mm-dd_hh-mm_name-of-event-or-chapter.json```
 For example:
-`2023-07-26_05-39_test-chapter.json`
-`2023-07-26_05-42_test-event-2.json`
+```2023-07-26_05-39_test-chapter.json```
+```2023-07-26_05-42_test-event-2.json```
 Times are in UTC.
