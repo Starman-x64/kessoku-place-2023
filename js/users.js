@@ -54,13 +54,16 @@ function renderUsers() {
     let accountsDiv = document.createElement("div");
     accountsDiv.classList.add("user-accounts");
     user.accounts.forEach(account => {
-      let service = document.createElement("div");
+      let link = document.createElement("a");
+      link.href = account.link;
+      if (account.brokenLink) link.classList.add("broken-link")
+      //let service = document.createElement("div");
       let backgroundColor = SERVICES.filter(s => s.name == account.service)[0].color;
-      service.classList.add("user-account");
-      service.style.backgroundColor = backgroundColor;
-      service.style.color = getTextColor(backgroundColor); 
-      service.innerHTML = `<a href="${account.link}" ${account.brokenLink ? "class=\"broken-link\"" : ""}>${account.username}`;
-      accountsDiv.appendChild(service);
+      link.classList.add("user-account");
+      link.style.backgroundColor = backgroundColor;
+      link.style.color = getTextColor(backgroundColor); 
+      link.innerHTML = account.username;
+      accountsDiv.appendChild(link);
     });
     userDiv.appendChild(accountsDiv);
 

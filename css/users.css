@@ -67,13 +67,21 @@
   border-radius: 1em;
 }
 
-.user-account a {
-  color: inherit;
+.user-account {
   text-decoration: none;
+  box-shadow: 0.1em 0.1em rgba(0,0,0.5);
 }
 
+/* .user-account:hover {
+  text-decoration: none;
+  box-shadow: 0.1em 0.1em rgba(0,0,0.5);
+  transform: translate(0, -0.5em);
+} */
+
 .broken-link {
-  text-decoration: line-through;
+  text-decoration: line-through !important;
+  filter: brightness(50%) !important;
+  color: black !important;
 }
 /* .user-profile {
   
