@@ -44,7 +44,24 @@
   text-align: center;
 }
 
+.user-accounts {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  
+  min-width: 100%;
+  overflow: hidden;
 
+  font-size: smaller;
+}
+
+.user-account {
+  max-height: fit-content;
+  min-width: 100%;
+  padding: 0.1em;
+  text-align: center;
+}
 /* .user-profile {
   
 } */

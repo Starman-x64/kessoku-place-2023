@@ -37,9 +37,11 @@ function renderUsers(users) {
     accountsDiv.classList.add("user-accounts");
     user.accounts.forEach(account => {
       let service = document.createElement("div");
-      service.innerHTML = `<img class="user-account" src="https://starman-x64.github.io/kessoku-place-2023/data/media/services/${account.service.toLowerCase()}.png"/>`;
+      service.classList.add("user-account");
+      service.innerHTML = `${account.username}`;
       accountsDiv.appendChild(service);
     });
+    userDiv.appendChild(accountsDiv);
 
     usersDiv.appendChild(userDiv);
   });
