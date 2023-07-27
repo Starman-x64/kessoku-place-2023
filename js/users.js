@@ -12,6 +12,7 @@ var USERS, SERVICES;
   .then((response) => response.json())
   .then((json) => SERVICES = json);
   renderUsers();
+  //document.getElementById("prologue").addEventListener("mouseover", userPopup(USERS.filter(u => u.name == "Starman_x64")[0]));
 })();
 
 // hex to rgb
@@ -30,43 +31,53 @@ function renderUsers() {
   console.log(USERS);
 
   USERS.forEach(user => {
-    let userDiv = document.createElement("div"); // holds user info to display
-    userDiv.classList.add("user-div");
-    // username
-    let username = document.createElement("div");
-    username.classList.add("user-username");
-    username.innerHTML = user.name;
-    userDiv.appendChild(username);
-    
-    // profile picture
-    let profileDiv = document.createElement("div"); // flex item to position within userDiv
-    profileDiv.classList.add("user-profile");
-    let profileMask = document.createElement("div"); // circular mask to clip the image
-    profileMask.classList.add("user-profile-mask");
-    let profileImg = document.createElement("img"); // actual image
-    profileImg.src = `https://starman-x64.github.io/kessoku-place-2023/data/media/profiles/${user.name}.png`;
-    profileImg.alt = `${user.name}'s Profile Picture`;
-    profileMask.appendChild(profileImg);
-    profileDiv.appendChild(profileMask);
-    userDiv.appendChild(profileDiv);
-    
-    // accounts
-    let accountsDiv = document.createElement("div");
-    accountsDiv.classList.add("user-accounts");
-    user.accounts.forEach(account => {
-      let link = document.createElement("a");
-      link.href = account.link;
-      if (account.brokenLink) link.classList.add("broken-link")
-      //let service = document.createElement("div");
-      let backgroundColor = SERVICES.filter(s => s.name == account.service)[0].color;
-      link.classList.add("user-account");
-      link.style.backgroundColor = backgroundColor;
-      link.style.color = getTextColor(backgroundColor); 
-      link.innerHTML = account.username;
-      accountsDiv.appendChild(link);
-    });
-    userDiv.appendChild(accountsDiv);
-
-    usersDiv.appendChild(userDiv);
+    usersDiv.appendChild(createUserDiv(user));
   });
+}
+
+// creates a div with all the user information
+function createUserDiv(userInfo) {
+  let userDiv = document.createElement("div"); // holds user info to display
+  userDiv.classList.add("user-div");
+  // username
+  let username = document.createElement("div");
+  username.classList.add("user-username");
+  username.innerHTML = userInfo.name;
+  userDiv.appendChild(username);
+  
+  // profile picture
+  let profileDiv = document.createElement("div"); // flex item to position within userDiv
+  profileDiv.classList.add("user-profile");
+  let profileMask = document.createElement("div"); // circular mask to clip the image
+  profileMask.classList.add("user-profile-mask");
+  let profileImg = document.createElement("img"); // actual image
+  profileImg.src = `https://starman-x64.github.io/kessoku-place-2023/data/media/profiles/${userInfo.name}.png`;
+  profileImg.alt = `${userInfo.name}'s Profile Picture`;
+  profileMask.appendChild(profileImg);
+  profileDiv.appendChild(profileMask);
+  userDiv.appendChild(profileDiv);
+  
+  // accounts
+  let accountsDiv = document.createElement("div");
+  accountsDiv.classList.add("user-accounts");
+  userInfo.accounts.forEach(account => {
+    let link = document.createElement("a");
+    link.href = account.link;
+    if (account.brokenLink) link.classList.add("broken-link")
+    //let service = document.createElement("div");
+    let backgroundColor = SERVICES.filter(s => s.name == account.service)[0].color;
+    link.classList.add("user-account");
+    link.style.backgroundColor = backgroundColor;
+    link.style.color = getTextColor(backgroundColor); 
+    link.innerHTML = account.username;
+    accountsDiv.appendChild(link);
+  });
+  userDiv.appendChild(accountsDiv);
+
+  return userDiv;
+}
+
+// displays user info in little popup
+function userPopup(userInfo) {
+  
 }
