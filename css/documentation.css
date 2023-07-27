@@ -1,0 +1,27 @@
+.chapter {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 2em;
+  border: solid 16px black;
+}
+
+.event {
+  
+}
+
+.events-table {
+  /* border: solid 1px red; */
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.events-table td {
+  /* border: solid 1px red; */
+}
+
+.event-description {
+  text-align: right;
+}
