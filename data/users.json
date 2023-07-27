@@ -6,7 +6,7 @@
         "service": "Discord",
         "displayName": "Starman_x64",
         "username": "@starman_x64",
-        "link": "discord.com",
+        "link": "https://discord.com",
         "brokenLink": false,
         "mediaSrc": ""
       },
@@ -14,7 +14,7 @@
         "service": "Reddit",
         "displayName": "Starman_x64",
         "username": "u/starman_x64",
-        "link": "reddit.com/u/starman_x64",
+        "link": "https://reddit.com/u/starman_x64",
         "brokenLink": false,
         "mediaSrc": ""
       }
@@ -52,7 +52,7 @@
         "service": "Discord",
         "displayName": "Domo",
         "username": "@domoandfinch",
-        "link": "discord.com",
+        "link": "https://discord.com/users/709625196814008330",
         "brokenLink": false,
         "mediaSrc": ""
       },
@@ -60,7 +60,7 @@
         "service": "Reddit",
         "displayName": "Domo",
         "username": "u/domoandfinch",
-        "link": "reddit.com/u/domoandfinch",
+        "link": "https://reddit.com/u/domoandfinch",
         "brokenLink": false,
         "mediaSrc": ""
       }
@@ -90,16 +90,16 @@
         "service": "Discord",
         "displayName": "Joy",
         "username": "@joy",
-        "link": "discord.com",
+        "link": "https://discord.com/users/334539687085735938",
         "brokenLink": false,
         "mediaSrc": ""
       },
       {
         "service": "Reddit",
         "displayName": "joy",
-        "username": "u/idkwhatjoysredditusernameis",
-        "link": "reddit.com/u/idkwhatjoysredditusernameis",
-        "brokenLink": false,
+        "username": "u/",
+        "link": "https://reddit.com/",
+        "brokenLink": true,
         "mediaSrc": ""
       }
     ],

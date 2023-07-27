@@ -6,20 +6,22 @@
 }
 
 .user-div {
-  border: solid 10px black;
-}
-
-#users div {
   width: 15em;
   height: 20em;
   display: flex;
   flex-flow: column nowrap;
-  flex-basis: content;
+  gap: 0.1em;
+  
+  border: solid 10px black;
+  background: linear-gradient(#313338 0%, #111214 75%, #111214 100%); /* #313338 */
+  color: white;
 }
 
 .user-username {
   text-align: center;
   display: block;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .user-profile {
@@ -46,21 +48,32 @@
 
 .user-accounts {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  gap: 0.25em;
   
-  min-width: 100%;
-  overflow: hidden;
+  width: 80%;
+  align-self: center;
 
   font-size: smaller;
 }
 
 .user-account {
   max-height: fit-content;
-  min-width: 100%;
+  width: 100%;
   padding: 0.1em;
   text-align: center;
+  border-radius: 1em;
+}
+
+.user-account a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.broken-link {
+  text-decoration: line-through;
 }
 /* .user-profile {
   

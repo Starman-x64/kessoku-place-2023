@@ -1,17 +1,35 @@
 const DAY_ONE = "2023-07-20";
 const PROFILE_SIZE = "50%";
 
-// load events json
-fetch("https://starman-x64.github.io/kessoku-place-2023/data/users.json")
+// load json data
+var USERS, SERVICES;
+
+(async () => {
+  await fetch("https://starman-x64.github.io/kessoku-place-2023/data/users.json")
   .then((response) => response.json())
-  .then((json) => renderUsers(json)); 
+  .then((json) => USERS = json); 
+  await fetch("https://starman-x64.github.io/kessoku-place-2023/data/services.json")
+  .then((response) => response.json())
+  .then((json) => SERVICES = json);
+  renderUsers();
+})();
+
+// hex to rgb
+function hexToRgb(hex, result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)) {
+  return result ? result.map(i => parseInt(i, 16)).slice(1) : null;
+}
+// determines if text on a given background should be black or white
+function getTextColor(backgroundColor) {
+  let rgb = hexToRgb(backgroundColor);
+  return (rgb[0]*0.299 + rgb[1]*0.587 + rgb[2]*0.114) > 186 ? "#000000" : "#ffffff" ;
+}
 
 // draws user info to the screen
-function renderUsers(users) {
+function renderUsers() {
   let usersDiv = document.getElementById("users");
-  console.log(users);
+  console.log(USERS);
 
-  users.forEach(user => {
+  USERS.forEach(user => {
     let userDiv = document.createElement("div"); // holds user info to display
     userDiv.classList.add("user-div");
     // username
@@ -37,8 +55,11 @@ function renderUsers(users) {
     accountsDiv.classList.add("user-accounts");
     user.accounts.forEach(account => {
       let service = document.createElement("div");
+      let backgroundColor = SERVICES.filter(s => s.name == account.service)[0].color;
       service.classList.add("user-account");
-      service.innerHTML = `${account.username}`;
+      service.style.backgroundColor = backgroundColor;
+      service.style.color = getTextColor(backgroundColor); 
+      service.innerHTML = `<a href="${account.link}" ${account.brokenLink ? "class=\"broken-link\"" : ""}>${account.username}`;
       accountsDiv.appendChild(service);
     });
     userDiv.appendChild(accountsDiv);
