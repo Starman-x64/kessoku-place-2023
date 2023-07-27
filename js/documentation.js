@@ -7,7 +7,6 @@ fetch("https://starman-x64.github.io/kessoku-place-2023/data/events.json")
 
 // loop through each chapter and add it and its events to the screen
 function renderEvents(eventsObject) {
-  
   let documentation = document.getElementById("documentation");
   eventsObject.forEach(chapter => {
     // create div and table to contain events

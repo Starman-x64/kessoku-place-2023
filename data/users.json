@@ -23,12 +23,12 @@
       {
         "timeStamp": "13:39 26-07-2023",
         "timeZone": "+8",
+        "name": "r/kessokuband",
         "status": "member",
         "event": "Test Event",
-        "name": "r/kessokuband",
         "roles": [
           {
-            "name": "diplomat",
+            "name": "Diplomat",
             "info": {
               "faction": "r/touhou"
             }
@@ -36,8 +36,92 @@
         ]
       },
       {
+        "timeStamp": "13:39 26-07-2023",
+        "timeZone": "+8",
         "name": "r/touhou",
+        "status": "member",
+        "event": "Test Event",
         "roles": []
+      }
+    ]
+  },
+  {
+    "name": "Domo",
+    "accounts": [
+      {
+        "service": "Discord",
+        "displayName": "Domo",
+        "username": "@domoandfinch",
+        "link": "discord.com",
+        "brokenLink": false,
+        "mediaSrc": ""
+      },
+      {
+        "service": "Reddit",
+        "displayName": "Domo",
+        "username": "u/domoandfinch",
+        "link": "reddit.com/u/domoandfinch",
+        "brokenLink": false,
+        "mediaSrc": ""
+      }
+    ],
+    "factionHistory": [
+      {
+        "timeStamp": "13:39 26-07-2023",
+        "timeZone": "+8",
+        "name": "r/kessokuband",
+        "status": "member",
+        "event": "Test Event",
+        "roles": [
+          {
+            "name": "Commander",
+            "info": {
+              "division": "Ryo"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Joy",
+    "accounts": [
+      {
+        "service": "Discord",
+        "displayName": "Joy",
+        "username": "@joy",
+        "link": "discord.com",
+        "brokenLink": false,
+        "mediaSrc": ""
+      },
+      {
+        "service": "Reddit",
+        "displayName": "joy",
+        "username": "u/idkwhatjoysredditusernameis",
+        "link": "reddit.com/u/idkwhatjoysredditusernameis",
+        "brokenLink": false,
+        "mediaSrc": ""
+      }
+    ],
+    "factionHistory": [
+      {
+        "timeStamp": "13:39 26-07-2023",
+        "timeZone": "+8",
+        "name": "r/kessokuband",
+        "status": "member",
+        "event": "Test Event",
+        "roles": [
+          {
+            "name": "Template Manager",
+            "info": {}
+          },
+          {
+            "name": "Diplomat",
+            "info": {
+              "faction": "r/touhou"
+            }
+          }
+        ]
       }
     ]
   }
