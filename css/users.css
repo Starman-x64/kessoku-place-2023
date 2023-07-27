@@ -1,3 +1,50 @@
 #users {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1em;
 }
+
+.user-div {
+  border: solid 10px black;
+}
+
+#users div {
+  width: 15em;
+  height: 20em;
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: content;
+}
+
+.user-username {
+  text-align: center;
+  display: block;
+}
+
+.user-profile {
+  text-align: center;
+}
+
+.user-profile-mask {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  max-width: 10em;
+  max-height: 10em;
+  min-width: 10em;
+  min-height: 10em;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.user-profile-mask img {
+  width: 100%;
+  line-height: 10em;
+  text-align: center;
+}
+
+
+/* .user-profile {
+  
+} */
