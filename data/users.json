@@ -98,7 +98,7 @@
         "service": "Reddit",
         "displayName": "joy",
         "username": "u/",
-        "link": "https://reddit.com/",
+        "link": "https://reddit.com/u/",
         "brokenLink": true,
         "mediaSrc": ""
       }
@@ -120,6 +120,114 @@
             "info": {
               "faction": "r/touhou"
             }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Izu 虹夏虹夏",
+    "accounts": [
+      {
+        "service": "Discord",
+        "displayName": "Izu 虹夏虹夏",
+        "username": "@red_hare",
+        "link": "https://discord.com/users/513742553611239426",
+        "brokenLink": false,
+        "mediaSrc": ""
+      },
+      {
+        "service": "Reddit",
+        "displayName": "Idz4gqbi",
+        "username": "u/idz4gqbi",
+        "link": "https://reddit.com/u/idz4gqbi",
+        "brokenLink": true,
+        "mediaSrc": ""
+      }
+    ],
+    "factionHistory": [
+      {
+        "timeStamp": "13:39 26-07-2023",
+        "timeZone": "+8",
+        "name": "r/kessokuband",
+        "status": "member",
+        "event": "Test Event",
+        "roles": [
+          {
+            "name": "Commander",
+            "info": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "YUZUtry",
+    "accounts": [
+      {
+        "service": "Discord",
+        "displayName": "YUZUtry",
+        "username": "@yuzutry",
+        "link": "https://discord.com/users/1082189673935413368",
+        "brokenLink": false,
+        "mediaSrc": ""
+      },
+      {
+        "service": "Reddit",
+        "displayName": "yuzutry",
+        "username": "u/yuzutry",
+        "link": "https://reddit.com/u/yuzutry",
+        "brokenLink": true,
+        "mediaSrc": ""
+      }
+    ],
+    "factionHistory": [
+      {
+        "timeStamp": "13:39 26-07-2023",
+        "timeZone": "+8",
+        "name": "r/kessokuband",
+        "status": "member",
+        "event": "Test Event",
+        "roles": [
+          {
+            "name": "Commander",
+            "info": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dsuzu",
+    "accounts": [
+      {
+        "service": "Discord",
+        "displayName": "dsuzu",
+        "username": "@dsuzu",
+        "link": "https://discord.com/users/281216787130089473",
+        "brokenLink": false,
+        "mediaSrc": ""
+      },
+      {
+        "service": "Reddit",
+        "displayName": "dsuzu",
+        "username": "u/dsuzu",
+        "link": "https://reddit.com/u/dsuzu",
+        "brokenLink": true,
+        "mediaSrc": ""
+      }
+    ],
+    "factionHistory": [
+      {
+        "timeStamp": "13:39 26-07-2023",
+        "timeZone": "+8",
+        "name": "r/kessokuband",
+        "status": "member",
+        "event": "Test Event",
+        "roles": [
+          {
+            "name": "Commander",
+            "info": {}
           }
         ]
       }

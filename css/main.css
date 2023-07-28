@@ -28,3 +28,37 @@ body {
 footer {
   text-align: center;
 }
+
+#documentation {
+  text-align: center;
+}
+
+.events-list {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.events-list > ul {
+  list-style: none;
+}
+
+.event-time {
+  
+}
+
+.event-time::after {
+  content: " – ";
+}
+
+.user-mention {
+  color: white;
+  background-color: #737ccedf;
+  padding: 0 0.3em 0 0.25em;
+  border-radius: 0.3em;
+}
+
+.user-mention::before {
+  content: "@";
+}

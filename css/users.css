@@ -15,6 +15,13 @@
   border: solid 10px black;
   background: linear-gradient(#313338 0%, #111214 75%, #111214 100%); /* #313338 */
   color: white;
+
+  position: fixed;
+  transform: translate(0, -100%);
+}
+
+.user-div a {
+  position: relative;
 }
 
 .user-username {

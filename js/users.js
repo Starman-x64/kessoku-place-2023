@@ -1,8 +1,9 @@
 const DAY_ONE = "2023-07-20";
 const PROFILE_SIZE = "50%";
 
+var userCards = [];
 // load json data
-var USERS, SERVICES;
+var USERS, SERVICES, USER_MENTIONS;
 
 (async () => {
   await fetch("https://starman-x64.github.io/kessoku-place-2023/data/users.json")
@@ -12,7 +13,9 @@ var USERS, SERVICES;
   .then((response) => response.json())
   .then((json) => SERVICES = json);
   renderUsers();
-  //document.getElementById("prologue").addEventListener("mouseover", userPopup(USERS.filter(u => u.name == "Starman_x64")[0]));
+  USER_MENTIONS = document.getElementsByClassName("user-mention");
+  document.getElementById("prologue").onmouseover = () => {showUserCard(userCards.filter(c => c.name == "Starman_x64")[0])};
+  document.getElementById("prologue").onmouseleave = () => {hideUserPopup(userCards.filter(c => c.name == "Starman_x64")[0])};
 })();
 
 // hex to rgb
@@ -31,7 +34,9 @@ function renderUsers() {
   console.log(USERS);
 
   USERS.forEach(user => {
-    usersDiv.appendChild(createUserDiv(user));
+    let card = createUserDiv(user);
+    userCards.push({ name: user.name, card: card });
+    usersDiv.appendChild(card);
   });
 }
 
@@ -72,12 +77,26 @@ function createUserDiv(userInfo) {
     link.innerHTML = account.username;
     accountsDiv.appendChild(link);
   });
+
+  userDiv.style.display = "none";
+
   userDiv.appendChild(accountsDiv);
 
   return userDiv;
 }
 
-// displays user info in little popup
-function userPopup(userInfo) {
-  
+// displays user card 
+function showUserCard(card) {
+  card.card.style.display = "flex";
+}hideUserPopup
+// hides user card
+function hideUserPopup(card) {
+  card.card.style.display = "none";
 }
+
+document.addEventListener('mousemove', (e) => {
+  userCards.forEach(card => {
+    card.card.style.top = `${e.clientY}px`;
+    card.card.style.left = `${e.clientX}px`;
+  });
+});
