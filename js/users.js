@@ -14,8 +14,11 @@ var USERS, SERVICES, USER_MENTIONS;
   .then((json) => SERVICES = json);
   renderUsers();
   USER_MENTIONS = document.getElementsByClassName("user-mention");
-  document.getElementById("prologue").onmouseover = () => {showUserCard(userCards.filter(c => c.name == "Starman_x64")[0])};
-  document.getElementById("prologue").onmouseleave = () => {hideUserPopup(userCards.filter(c => c.name == "Starman_x64")[0])};
+  USER_MENTIONS = Array.from(USER_MENTIONS);
+  USER_MENTIONS.forEach(userMention => {
+    userMention.onmouseover = () => {showUserCard(userCards.filter(c => c.name == userMention.getAttribute("data-user"))[0])};
+    userMention.onmouseleave = () => {hideUserPopup(userCards.filter(c => c.name == userMention.getAttribute("data-user"))[0])};
+  });
 })();
 
 // hex to rgb
